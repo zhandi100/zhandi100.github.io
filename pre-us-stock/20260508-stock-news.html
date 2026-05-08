@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2026/05/08 台股市場晨報</title>
+  <style>
+    :root {
+      --bg: #0a1020;
+      --panel: #121933;
+      --panel-2: #1a2548;
+      --text: #edf2ff;
+      --muted: #a8b4d4;
+      --accent: #7ea2ff;
+      --up: #2ecc71;
+      --down: #ff6b6b;
+      --warn: #ffbe55;
+      --border: rgba(255,255,255,.08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", sans-serif;
+      background: linear-gradient(180deg, #09101d 0%, #111a35 100%);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    .wrap { max-width: 1120px; margin: 0 auto; padding: 32px 20px 60px; }
+    .hero {
+      background: linear-gradient(135deg, rgba(126,162,255,.20), rgba(46,204,113,.10));
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 28px;
+      box-shadow: 0 18px 50px rgba(0,0,0,.28);
+    }
+    .eyebrow { color: #c6d6ff; font-size: 14px; letter-spacing: .08em; text-transform: uppercase; }
+    h1 { margin: 8px 0 12px; font-size: clamp(30px, 5vw, 48px); line-height: 1.15; }
+    .lead { margin: 0; color: var(--muted); font-size: 18px; }
+    .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 16px; margin-top: 20px; }
+    .card {
+      background: rgba(18,25,51,.94);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 20px;
+    }
+    .span-12 { grid-column: span 12; }
+    .span-8 { grid-column: span 8; }
+    .span-6 { grid-column: span 6; }
+    .span-4 { grid-column: span 4; }
+    .span-3 { grid-column: span 3; }
+    @media (max-width: 860px) {
+      .span-8, .span-6, .span-4, .span-3 { grid-column: span 12; }
+    }
+    h2 { margin: 0 0 14px; font-size: 22px; }
+    .metric-label { color: var(--muted); font-size: 13px; margin-bottom: 8px; }
+    .metric-value { font-size: 30px; font-weight: 700; line-height: 1.1; }
+    .up { color: var(--up); }
+    .down { color: var(--down); }
+    .neutral { color: var(--warn); }
+    .small { font-size: 14px; color: var(--muted); }
+    ul { margin: 0; padding-left: 20px; }
+    li + li { margin-top: 8px; }
+    .tag-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+    .tag { padding: 8px 12px; border-radius: 999px; background: var(--panel-2); border: 1px solid var(--border); font-size: 14px; color: #d9e4ff; }
+    .quote { padding: 16px 18px; border-left: 4px solid var(--accent); background: rgba(126,162,255,.08); border-radius: 12px; color: #dfe8ff; }
+    .watchlist { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+    .stock { padding: 14px; border-radius: 16px; background: rgba(255,255,255,.03); border: 1px solid var(--border); }
+    .stock b { font-size: 18px; }
+    .foot { margin-top: 18px; color: var(--muted); font-size: 13px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <div class="eyebrow">台股市場晨報｜2026/05/08</div>
+      <h1>AI 主線續強，但今天真正要看的不是開高，<br>而是開高之後有沒有量、能不能擴散</h1>
+      <p class="lead">昨晚美股由半導體與雲端 AI capex 題材領軍，費半、台積電 ADR、輝達、AMD 同步轉強。對台股偏正面，但今天更重要的是 2330 開高後能否穩住，以及主流能否從權值擴散到伺服器、散熱、PCB 與高速傳輸。</p>
+    </section>
+
+    <section class="grid">
+      <div class="card span-3">
+        <div class="metric-label">費半 SOX</div>
+        <div class="metric-value up">+6.26%</div>
+        <div class="small">11,160.99</div>
+      </div>
+      <div class="card span-3">
+        <div class="metric-label">台積電 ADR</div>
+        <div class="metric-value up">+4.57%</div>
+        <div class="small">414.15 USD</div>
+      </div>
+      <div class="card span-3">
+        <div class="metric-label">NVIDIA</div>
+        <div class="metric-value up">+5.98%</div>
+        <div class="small">211.50 USD</div>
+      </div>
+      <div class="card span-3">
+        <div class="metric-label">AMD</div>
+        <div class="metric-value up">+15.22%</div>
+        <div class="small">408.46 USD</div>
+      </div>
+
+      <div class="card span-8">
+        <h2>📌 今日晨報總結</h2>
+        <div class="quote">一句話先看：AI 主線續強，昨晚是「半導體 + 雲端 AI capex」帶動風險偏好回來，但今天台股重點不是會不會開高，而是開高後有沒有量、有沒有族群擴散。</div>
+        <ul style="margin-top:14px;">
+          <li>主線還是 AI / 半導體，尤其伺服器、先進製程、散熱、PCB、高速傳輸最容易先被點火。</li>
+          <li>油價大跌有利風險情緒，但金價仍強、VIX 仍在 17 上方，代表市場不是完全無視風險。</li>
+          <li>所以今天比較像「偏多開盤 + 結構選股」，不是看到紅盤就一路追。</li>
+        </ul>
+      </div>
+
+      <div class="card span-4">
+        <h2>市場溫度</h2>
+        <div class="metric-label">VIX 指數</div>
+        <div class="metric-value neutral">17.08</div>
+        <div class="small">+0.53%｜情緒偏穩，但風控不能全丟</div>
+        <div class="tag-row">
+          <span class="tag">盤勢：偏多開盤</span>
+          <span class="tag">主線：AI / 半導體</span>
+          <span class="tag">策略：等承接、不追高</span>
+          <span class="tag">風控：中性偏謹慎</span>
+        </div>
+      </div>
+
+      <div class="card span-6">
+        <h2>🌍 昨晚美股關鍵</h2>
+        <ul>
+          <li>Nasdaq：25,806.19（<span class="up">+3.67%</span>）</li>
+          <li>S&amp;P 500：7,337.11（<span class="up">+1.78%</span>）</li>
+          <li>道瓊：49,596.97（<span class="down">-0.11%</span>）</li>
+          <li>台積電 ADR：414.15（<span class="up">+4.57%</span>）</li>
+          <li>NVIDIA：211.50（<span class="up">+5.98%</span>）</li>
+          <li>AMD：408.46（<span class="up">+15.22%</span>）</li>
+        </ul>
+      </div>
+
+      <div class="card span-6">
+        <h2>🛢️ 風險與通膨線索</h2>
+        <ul>
+          <li>WTI 原油：96.94（<span class="down">-8.91%</span>）</li>
+          <li>黃金：4,702.20（<span class="up">+4.04%</span>）</li>
+          <li>油價大跌有利風險偏好與通膨預期降溫。</li>
+          <li>但金價續強，代表資金仍留一部分避險部位，盤勢不是完全無風險模式。</li>
+        </ul>
+      </div>
+
+      <div class="card span-12">
+        <h2>📰 新聞交叉驗證重點</h2>
+        <div class="watchlist">
+          <div class="stock"><b>AMD 財測 / AI 需求續強</b><br><span class="small">強化市場對 AI 基建擴張的信心，對半導體、伺服器與相關供應鏈偏正面。</span></div>
+          <div class="stock"><b>台積電 ADR、輝達同步走強</b><br><span class="small">對台股半導體、先進封裝與 AI 供應鏈氣氛明顯加分。</span></div>
+          <div class="stock"><b>Fed 分歧 / 川普訪中傳聞</b><br><span class="small">政策面雜音還在，代表盤可以偏多，但不能完全放掉風控。</span></div>
+          <div class="stock"><b>聯發科 AI megatrend 觀點延續</b><br><span class="small">主流題材本身沒有熄火，市場現在比較像挑公司、挑節奏，不是全面撤出。</span></div>
+        </div>
+      </div>
+
+      <div class="card span-12">
+        <h2>🏭 今天台股怎麼看</h2>
+        <div class="watchlist">
+          <div class="stock"><b>AI 伺服器</b><br><span class="small">2382 廣達、3231 緯創、6669 緯穎、2317 鴻海</span></div>
+          <div class="stock"><b>散熱</b><br><span class="small">3017 奇鋐、3324 雙鴻、3653 健策</span></div>
+          <div class="stock"><b>PCB / 高速傳輸</b><br><span class="small">2383 台光電、2345 智邦</span></div>
+          <div class="stock"><b>半導體權值 / 封測</b><br><span class="small">2330 台積電、2303 聯電、3711 日月光投控</span></div>
+        </div>
+      </div>
+
+      <div class="card span-6">
+        <h2>👀 開盤 30 分鐘先看什麼</h2>
+        <ul>
+          <li>2330 能不能守住開盤價。</li>
+          <li>AI 伺服器、散熱、PCB 是否同步轉強，而不是只有單一權值撐盤。</li>
+          <li>若開高後量縮整理、不破前低，屬健康換手。</li>
+          <li>若爆量卻續不上，代表短線容易先震盪，不宜追高。</li>
+        </ul>
+      </div>
+
+      <div class="card span-6">
+        <h2>⚠️ 今天的操作提醒</h2>
+        <ul>
+          <li>依方舟框架，主流續抱，但升溫區不要亂追。</li>
+          <li>拉太快先看位階與風控，不用因為怕踏空去接最亢奮那一筆。</li>
+          <li>今天不是只看指數紅不紅，而是看 AI 主流能不能開高後還有人接。</li>
+          <li>有承接，再做強中強；沒承接，寧可慢一點。</li>
+        </ul>
+      </div>
+
+      <div class="card span-12">
+        <h2>策略一句話</h2>
+        <div class="quote">今天比較好的節奏，不是搶第一根，而是等 2330 定方向、等主流確認擴散，再去找強中強。若只是情緒跳空，寧可慢一點，也不要追在最亢奮的位置。</div>
+        <div class="foot">資料整理時間：2026/05/08 早晨｜依據 Yahoo Finance 報價頁、Google News 公開新聞摘要與盤前整理彙整。此內容僅供資訊參考，不構成投資建議。</div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
