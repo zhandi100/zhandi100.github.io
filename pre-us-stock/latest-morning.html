@@ -6,119 +6,118 @@
   <title>2026/05/22 台股市場晨報</title>
   <style>
     :root {
-      --bg: #07111b;
-      --panel: rgba(9, 18, 30, 0.92);
-      --panel-2: rgba(18, 31, 48, 0.96);
-      --text: #e6edf7;
-      --muted: #9cb2cb;
-      --line: rgba(148, 163, 184, 0.16);
-      --up: #22c55e;
-      --down: #ef4444;
-      --warn: #f59e0b;
-      --accent: #67e8f9;
-      --accent-2: #f97316;
+      --bg:#091320;
+      --panel:rgba(11,19,34,.9);
+      --panel-2:rgba(20,31,52,.95);
+      --text:#e6edf8;
+      --muted:#9db0c9;
+      --line:rgba(148,163,184,.18);
+      --up:#22c55e;
+      --down:#ef4444;
+      --warn:#f59e0b;
+      --accent:#7dd3fc;
     }
-    * { box-sizing: border-box; }
+    * { box-sizing:border-box; }
     body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", sans-serif;
-      color: var(--text);
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC",sans-serif;
+      color:var(--text);
       background:
-        radial-gradient(circle at top right, rgba(103, 232, 249, 0.14), transparent 24%),
-        radial-gradient(circle at left center, rgba(249, 115, 22, 0.10), transparent 28%),
-        linear-gradient(180deg, #06101a 0%, #0a1522 100%);
-      line-height: 1.72;
+        radial-gradient(circle at top right, rgba(34,197,94,.10), transparent 22%),
+        radial-gradient(circle at left center, rgba(125,211,252,.16), transparent 30%),
+        linear-gradient(180deg, #06101c 0%, #0b1526 100%);
+      line-height:1.72;
     }
-    .wrap { max-width: 1160px; margin: 0 auto; padding: 28px 20px 56px; }
+    .wrap { max-width:1160px; margin:0 auto; padding:28px 20px 56px; }
     .hero, .card {
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: 24px;
-      box-shadow: 0 22px 50px rgba(0, 0, 0, 0.24);
+      background:var(--panel);
+      border:1px solid var(--line);
+      border-radius:24px;
+      box-shadow:0 22px 50px rgba(0,0,0,.22);
     }
     .hero {
-      padding: 30px;
-      background: linear-gradient(135deg, rgba(103, 232, 249, 0.12), rgba(249, 115, 22, 0.10)), var(--panel);
+      padding:30px;
+      background:linear-gradient(135deg, rgba(125,211,252,.12), rgba(34,197,94,.10)), var(--panel);
     }
     .eyebrow {
-      font-size: 13px;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-      color: #cad5e5;
+      font-size:13px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:#cad5e5;
     }
     h1 {
-      margin: 10px 0 12px;
-      font-size: clamp(30px, 5vw, 48px);
-      line-height: 1.14;
+      margin:10px 0 12px;
+      font-size:clamp(30px, 5vw, 48px);
+      line-height:1.14;
     }
-    .lead { margin: 0; font-size: 18px; color: var(--muted); }
+    .lead { margin:0; font-size:18px; color:var(--muted); }
     .grid {
-      display: grid;
-      grid-template-columns: repeat(12, 1fr);
-      gap: 16px;
-      margin-top: 20px;
+      display:grid;
+      grid-template-columns:repeat(12, 1fr);
+      gap:16px;
+      margin-top:20px;
     }
-    .card { padding: 20px; }
-    .span-12 { grid-column: span 12; }
-    .span-8 { grid-column: span 8; }
-    .span-6 { grid-column: span 6; }
-    .span-4 { grid-column: span 4; }
-    .span-3 { grid-column: span 3; }
-    @media (max-width: 860px) {
-      .span-8, .span-6, .span-4, .span-3 { grid-column: span 12; }
+    .card { padding:20px; }
+    .span-12 { grid-column:span 12; }
+    .span-8 { grid-column:span 8; }
+    .span-6 { grid-column:span 6; }
+    .span-4 { grid-column:span 4; }
+    .span-3 { grid-column:span 3; }
+    @media (max-width:860px) {
+      .span-8, .span-6, .span-4, .span-3 { grid-column:span 12; }
     }
-    h2 { margin: 0 0 14px; font-size: 22px; }
-    .metric-label { color: var(--muted); font-size: 13px; margin-bottom: 8px; }
-    .metric-value { font-size: 30px; font-weight: 800; line-height: 1.08; }
-    .up { color: var(--up); }
-    .down { color: var(--down); }
-    .neutral { color: var(--warn); }
-    .small { color: var(--muted); font-size: 14px; }
+    h2 { margin:0 0 14px; font-size:22px; }
+    .metric-label { color:var(--muted); font-size:13px; margin-bottom:8px; }
+    .metric-value { font-size:30px; font-weight:800; line-height:1.08; }
+    .up { color:var(--up); }
+    .down { color:var(--down); }
+    .neutral { color:var(--warn); }
+    .small { color:var(--muted); font-size:14px; }
     .quote {
-      padding: 16px 18px;
-      border-left: 4px solid var(--accent);
-      background: rgba(103, 232, 249, 0.08);
-      border-radius: 14px;
+      padding:16px 18px;
+      border-left:4px solid var(--accent);
+      background:rgba(125,211,252,.08);
+      border-radius:14px;
     }
-    ul { margin: 0; padding-left: 20px; }
-    li + li { margin-top: 8px; }
+    ul { margin:0; padding-left:20px; }
+    li + li { margin-top:8px; }
     .watchlist {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 12px;
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+      gap:12px;
     }
     .stock {
-      padding: 14px;
-      border: 1px solid var(--line);
-      background: rgba(255, 255, 255, 0.03);
-      border-radius: 16px;
+      padding:14px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.03);
+      border-radius:16px;
     }
-    .stock b { font-size: 18px; }
-    .tag-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+    .stock b { font-size:18px; }
+    .tag-row { display:flex; flex-wrap:wrap; gap:10px; margin-top:12px; }
     .tag {
-      padding: 8px 12px;
-      border-radius: 999px;
-      background: var(--panel-2);
-      border: 1px solid var(--line);
-      font-size: 14px;
+      padding:8px 12px;
+      border-radius:999px;
+      background:var(--panel-2);
+      border:1px solid var(--line);
+      font-size:14px;
     }
-    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    table { width:100%; border-collapse:collapse; font-size:14px; }
     th, td {
-      padding: 10px 8px;
-      border-bottom: 1px solid var(--line);
-      text-align: left;
-      vertical-align: top;
+      padding:10px 8px;
+      border-bottom:1px solid var(--line);
+      text-align:left;
+      vertical-align:top;
     }
-    th { color: #c7d5ea; font-weight: 700; }
-    .foot { margin-top: 16px; color: var(--muted); font-size: 13px; }
+    th { color:#c7d5ea; font-weight:700; }
+    .foot { margin-top:16px; color:var(--muted); font-size:13px; }
   </style>
 </head>
 <body>
   <div class="wrap">
     <section class="hero">
       <div class="eyebrow">台股市場晨報｜2026/05/22</div>
-      <h1>台股先用權值大漲反映利多，<br>今天重點不是追高，而是看主線能否續航</h1>
-      <p class="lead">TWSE 官方資料顯示，台股 5/21 加權指數收 41,368.21、上漲 1,347.39 點，成交金額 1.048 兆元；昨晚美股續穩，Dow +0.55%、S&amp;P 500 +0.17%、Nasdaq +0.09%，費半再漲 1.28%，台積電 ADR +1.38%、AMD +0.45%，但 NVIDIA 財報後正規盤反而下跌 1.77%。今晨 Nasdaq 100 期貨約 29,550.50、上漲 0.35%，VIX 收 16.76，代表風險偏好沒有壞掉，但市場對 AI 主線的標準已經變高。</p>
+      <h1>美股續穩但輝達收黑，<br>台股今天先看高檔消化與主線擴散</h1>
+      <p class="lead">TWSE 官方資料顯示，台股 5/21 加權指數收 41,368.21、上漲 1,347.39 點，成交金額 1,047,623,792,398 元；美股 5/21 收盤則偏溫和續強，Dow +0.55%、S&amp;P 500 +0.17%、Nasdaq +0.09%、費半 +1.28%，台積電 ADR +1.38%、AMD +0.45%，但 NVIDIA 反而下跌 1.77%。今晨 Nasdaq 100 期貨約 29,557.25、VIX 降到 16.76、WTI 回落到 97.71 美元，代表壓力有緩，但台股昨天提前大漲後，今天更重要的是確認主線能不能從權值股順利擴散，而不是直接把利多當成再追價理由。</p>
     </section>
 
     <section class="grid">
@@ -134,35 +133,35 @@
       </div>
       <div class="card span-3">
         <div class="metric-label">海外情緒</div>
-        <div class="metric-value up">偏正面但不鬆懈</div>
-        <div class="small">SOX +1.28%｜TSM ADR +1.38%｜NQ 期貨 +0.35%</div>
+        <div class="metric-value neutral">穩中有分化</div>
+        <div class="small">SOX +1.28%｜TSM ADR +1.38%｜NVDA -1.77%</div>
       </div>
       <div class="card span-3">
         <div class="metric-label">操作節奏</div>
-        <div class="metric-value neutral">續抱挑強</div>
-        <div class="small">價值區等回測，升溫區嚴禁追價</div>
+        <div class="metric-value neutral">先看承接</div>
+        <div class="small">價值區等回檔，升溫區不追價</div>
       </div>
 
       <div class="card span-8">
         <h2>一句話先看 / 今日晨報總結</h2>
-        <div class="quote">一句話先看：台股昨天已經先把美股利多與 AI 修復反映一大段，今天真正要看的是 2330、2317、2382 這些核心權值能不能把強勢延續成健康輪動；如果只剩 2454、3037、6669 這類高熱股衝，盤面就會從續強盤變成擁擠盤。</div>
+        <div class="quote">一句話先看：台股昨天已經先把輝達財報利多大幅反映，昨晚美股雖續穩、費半續強，但輝達本尊收黑，今天台股真正要看的不是再衝多少點，而是 2330、2454、AI 伺服器與 PCB 能不能把高檔消化做成健康擴散。</div>
         <ul style="margin-top:14px;">
-          <li>TWSE 官方數據顯示，5/21 指數大漲 3.37%，但成交金額只有 1.048 兆，說明這波主要靠權值與主線集中拉抬，不是全面失控噴出。</li>
-          <li>美股三大指數續穩、費半再走高，代表大方向仍對科技與半導體友善；但 NVIDIA 正規盤收黑，市場已從「等財報」轉到「看 2027 能不能延續」。</li>
-          <li>今晨 NQ 期貨續紅、VIX 回到 16 字頭，風險情緒沒有翻空；只是台股短線乖離已拉大，今天更適合看承接與分流，不適合用情緒追價。</li>
+          <li>5/21 台股是先反應利多的一天，單日大漲 1,347.39 點，市場情緒已從恐慌切回 risk-on。</li>
+          <li>美股 5/21 收盤沒有失速，但也不是全面噴出，顯示市場對 AI 交易的要求已從「只要 beat 就好」轉成「還要看估值與延續性」。</li>
+          <li>VIX 回落、油價下行、Nasdaq 100 期貨偏紅，盤前環境不差；但昨天已經先噴過的台股，今天最怕的是開高後只剩高位股互相追價。</li>
         </ul>
       </div>
 
       <div class="card span-4">
         <h2>市場溫度</h2>
         <div class="metric-label">盤勢判讀</div>
-        <div class="metric-value neutral">高檔續強盤</div>
-        <div class="small">主線明確，但熱區擁擠度明顯升高</div>
+        <div class="metric-value neutral">偏暖，但不宜躁進</div>
+        <div class="small">利多還在，節奏從搶反彈轉成檢驗續航</div>
         <div class="tag-row">
           <span class="tag">主線：半導體 / AI 伺服器 / PCB</span>
-          <span class="tag">延伸：被動元件 / 封測</span>
-          <span class="tag">情緒：偏熱但未失控</span>
-          <span class="tag">風控：只做主線內強弱切換</span>
+          <span class="tag">價值區：權值回檔承接</span>
+          <span class="tag">升溫區：高彈性零組件</span>
+          <span class="tag">風控：不把開高當買點</span>
         </div>
       </div>
 
@@ -173,17 +172,17 @@
             <tr><th>指標</th><th>收盤 / 最新</th><th>漲跌</th><th>解讀</th></tr>
           </thead>
           <tbody>
-            <tr><td>道瓊</td><td>50,285.66</td><td class="up">+0.55%</td><td>油價回落後，資金願意回補傳產與大型權值，風險情緒穩住。</td></tr>
-            <tr><td>S&amp;P 500</td><td>7,445.72</td><td class="up">+0.17%</td><td>續創高檔區，代表大環境沒有轉空，只是走勢從暴衝改成篩選。</td></tr>
-            <tr><td>NASDAQ</td><td>26,293.10</td><td class="up">+0.09%</td><td>科技仍偏強，但漲幅收斂，市場開始檢驗高估值是否值得繼續墊高。</td></tr>
-            <tr><td>費半 SOX</td><td>11,964.09</td><td class="up">+1.28%</td><td>半導體主線未熄火，對台股電子仍是正面支撐。</td></tr>
-            <tr><td>台積電 ADR</td><td>407.15</td><td class="up">+1.38%</td><td>2330 有續強背景，但昨天現貨已先反映一段，今天更看能否守強而非再暴衝。</td></tr>
-            <tr><td>NVIDIA</td><td>219.51</td><td class="down">-1.77%</td><td>財報好不代表股價一定漲，市場開始把焦點放在後續成長斜率與估值承受度。</td></tr>
-            <tr><td>AMD</td><td>449.59</td><td class="up">+0.45%</td><td>AI 晶片次主流仍有資金承接，沒有出現全面撤退訊號。</td></tr>
-            <tr><td>Nasdaq 100 期貨</td><td>29,550.50</td><td class="up">+0.35%</td><td>今晨期貨偏紅，有利台股開盤情緒，但不代表高位股可以無條件續追。</td></tr>
-            <tr><td>VIX</td><td>16.76</td><td class="down">-3.90%</td><td>恐慌快速降溫，代表市場願意承擔風險，但也表示追價的人會變多。</td></tr>
-            <tr><td>WTI 原油</td><td>97.74</td><td class="up">+1.44%</td><td>仍在高位，但比前幾日和緩，通膨壓力暫時沒有再加碼市場。</td></tr>
-            <tr><td>黃金</td><td>4,536.00</td><td class="down">-0.14%</td><td>避險資產略鬆，代表市場短線沒有再進一步擴大恐慌折價。</td></tr>
+            <tr><td>道瓊</td><td>50,285.66</td><td class="up">+0.55%</td><td>油價回落後，傳產與大型權值情緒相對穩。</td></tr>
+            <tr><td>S&amp;P 500</td><td>7,445.72</td><td class="up">+0.17%</td><td>大盤續紅，但漲幅已明顯降溫，不是全面性 risk-on。</td></tr>
+            <tr><td>NASDAQ</td><td>26,293.10</td><td class="up">+0.09%</td><td>科技股沒有轉弱，但追價動能也沒比台股昨天更強。</td></tr>
+            <tr><td>費半 SOX</td><td>11,964.08</td><td class="up">+1.28%</td><td>晶片族群續強，對台股半導體主線仍是正面定錨。</td></tr>
+            <tr><td>台積電 ADR</td><td>407.15</td><td class="up">+1.38%</td><td>延續修復，對 2330 現貨是偏正向的盤前參考。</td></tr>
+            <tr><td>NVIDIA</td><td>219.51</td><td class="down">-1.77%</td><td>財報利多沒有換到股價續漲，市場開始檢查估值與想像空間。</td></tr>
+            <tr><td>AMD</td><td>449.59</td><td class="up">+0.45%</td><td>高 beta 晶片股仍守在高位，情緒沒有明顯熄火。</td></tr>
+            <tr><td>Nasdaq 100 期貨</td><td>29,557.25</td><td class="up">+0.57%</td><td>今晨期貨偏穩，有利台股開盤情緒，但不構成追高理由。</td></tr>
+            <tr><td>VIX</td><td>16.76</td><td class="up">-3.90%</td><td>波動降溫，市場壓力比前幾天小，但還不到過度安逸。</td></tr>
+            <tr><td>WTI 原油</td><td>97.71</td><td class="up">-0.56%</td><td>油價跌回百元下方，通膨壓力先鬆一口氣。</td></tr>
+            <tr><td>黃金</td><td>4,534.50</td><td class="up">+0.07%</td><td>避險需求仍在，但沒有惡化成明顯風險出逃。</td></tr>
           </tbody>
         </table>
       </div>
@@ -191,35 +190,35 @@
       <div class="card span-6">
         <h2>市場溫度 / 風險與通膨線索</h2>
         <ul>
-          <li>AP 與 Finviz 的美股盤後摘要都把焦點放在油價回落與美伊談判進展，代表昨晚市場的核心不是新刺激，而是 inflation scare 暫時降溫。</li>
-          <li>VIX 回到 16.76、NQ 期貨續紅，說明外資風險偏好沒有破；但油價還在 97 美元附近，市場對通膨的警戒只是放鬆，不是消失。</li>
-          <li>NVIDIA 財報後股價收黑，提醒市場現在不是「只要 AI 就全面買單」，而是開始要求更高的成長延續性。</li>
-          <li>對台股來說，今天比較容易走成權值穩、主線分流、熱區輪動的盤，而不是所有 AI 股一起噴。</li>
+          <li>VIX 從 17.44 再降到 16.76，油價也從 98.26 再回到 97.71，代表市場最怕的油價與波動壓力，昨晚是往緩解方向走。</li>
+          <li>但 NVIDIA 財報過後股價收黑 1.77%，說明市場現在不是單看「有沒有 beat」，而是開始要求 AI 交易要有更強的延續性與估值說服力。</li>
+          <li>黃金仍守高檔、S&amp;P 漲幅只有 0.17%，表示風險偏好雖回暖，但還稱不上全面放鬆；這種盤對台股最常見的走法就是主線內部輪動，而不是整體無差別上攻。</li>
+          <li>換句話說，今天盤面若健康，應該看到權值穩、伺服器承接、PCB / 零組件接棒；若只剩漲停秀與高位急拉，市場溫度就會太燙。</li>
         </ul>
       </div>
 
       <div class="card span-6">
         <h2>新聞交叉驗證重點</h2>
         <ul>
-          <li>AP 明確寫出：美股三大指數收高的主因，是油價從日內高位回落，讓殖利率與通膨壓力暫時降溫。</li>
-          <li>Reuters 另一條主線是 AMD 宣布將在台灣 AI 生態系投資超過 100 億美元，這對台系先進製程、封裝與伺服器鏈都是中期正面訊號。</li>
-          <li>Finviz 的市場摘要也點出 NVIDIA 財報後股價反而走弱，代表市場正在從「題材確認」切到「估值檢驗」。</li>
-          <li>TWSE 官方類股指數同步驗證盤面結構：半導體 +3.22%、電腦及週邊 +5.03%、電子零組件 +6.62%、電子通路 +3.47%，資金仍集中在 AI / 半導體主線內部。</li>
+          <li>AP 對 5/21 美股的主軸很明確：油價從盤中高位回落、帶動殖利率壓力緩和，讓美股在震盪後收高，這和 VIX / 油價數字方向一致。</li>
+          <li>Reuters 盤前摘要則提醒，NVIDIA 財報雖強，但期貨反應偏克制，代表市場已經把財報視為基本門檻，不再自動給估值溢價。</li>
+          <li>經濟日報與中央社對 5/21 台股的描述都聚焦在「輝達財報帶動報復性反彈」，且聯發科、台積電、AI 股同步領軍，這和 TWSE 官方的半導體 +3.22%、電子零組件 +6.62%、電腦週邊 +5.03% 完全對得上。</li>
+          <li>把海外與台股新聞放在一起看，今天的重點就很清楚了：利多不是沒有，而是昨天台股已先反映不少，所以今天要驗證的是延續性，不是情緒本身。</li>
         </ul>
       </div>
 
       <div class="card span-12">
         <h2>今日台股主線與開盤觀察</h2>
         <div class="watchlist">
-          <div class="stock"><b>權值定錨｜2330 台積電、2454 聯發科</b><br><span class="small">2330 昨收 2,230 元、2454 昨收 3,550 元；2330 代表大盤續強品質，2454 則是短線熱度指標。若 2454 強、2330 弱，盤面就容易變成擁擠拉抬。</span></div>
-          <div class="stock"><b>AI 伺服器承接｜2317 鴻海、2382 廣達、3231 緯創</b><br><span class="small">三檔昨天同步走強，但還沒像千金高價股那麼擁擠；若早盤能抗跌續穩，代表主線資金仍在健康輪動。</span></div>
-          <div class="stock"><b>高熱延伸｜3037 欣興、6669 緯穎、3711 日月光投控</b><br><span class="small">這些是昨天最容易吸到追價資金的區域，今天若再急拉，風險報酬會迅速惡化。</span></div>
-          <div class="stock"><b>擁擠度觀察｜2327 國巨、2492 華新科</b><br><span class="small">被動元件強勢是加分，但若盤面只剩這類短線熱區撐場，就代表資金在主線內往最熱的地方擠。</span></div>
+          <div class="stock"><b>權值定錨｜2330 台積電、2454 聯發科</b><br><span class="small">2330 昨收 2,230 元、2454 昨收 3,550 元。今天先看兩檔能否把昨日跳升後的高檔震盪消化成續航，而不是開高後只剩短線獲利了結。</span></div>
+          <div class="stock"><b>AI 伺服器承接｜2317 鴻海、2382 廣達、3231 緯創</b><br><span class="small">三檔昨天都跟上主線，但位階與擁擠度仍低於最熱 IC 設計。若早盤拉回有承接，主線結構會更健康。</span></div>
+          <div class="stock"><b>升溫擴散｜2327 國巨、2492 華新科、3037 欣興</b><br><span class="small">這三檔已是昨天最強熱區之一。今天若續強，代表資金願意往零組件與 PCB 擴散；但若爆量長黑，短線過熱訊號會很快出現。</span></div>
+          <div class="stock"><b>盤面節奏｜3711 日月光投控</b><br><span class="small">封測與先進封裝是 AI 主線延伸區。若 3711 能續穩，代表資金不是只抱單一龍頭，而是在做次產業擴散。</span></div>
         </div>
         <ul style="margin-top:14px;">
-          <li>第一個觀察是 2330 能不能守住昨天長紅後的高檔區，因為它決定大盤會不會從「強勢」變成「拉高後震盪」。</li>
-          <li>第二個觀察是 2317 / 2382 / 3231 能否接力，這會決定 AI 伺服器是否仍是最健康的中位階主線。</li>
-          <li>第三個觀察是 2454、3037、6669 若再大幅跳高，是否出現開高走低；這是今天辨識升溫區風險最直觀的訊號。</li>
+          <li>第一個觀察是 2330 能不能穩住 5/21 長紅後的獲利賣壓；台股今天是否能維持強勢，還是要先看台積電臉色。</li>
+          <li>第二個觀察是 2454、2327、2492、3037 這些高彈性族群，若再全面急拉，盤勢短線會更熱，但追價難度也會同步放大。</li>
+          <li>第三個觀察是 AI 伺服器能不能接棒，而不是只讓最熱零組件股獨走；能擴散，盤才穩，不能擴散就容易變成沖高震盪。</li>
         </ul>
       </div>
 
@@ -227,11 +226,11 @@
         <h2>個股價值區</h2>
         <div class="quote">價值區定義：主線內、位階相對合理、拉回後值得優先觀察。</div>
         <div class="watchlist" style="margin-top:14px;">
-          <div class="stock"><b>2330 台積電</b><br><span class="small">5/21 收 2,230 元、上漲 45 元；ADR 續強，但現貨不像 2454 那樣過熱，仍是主線內最重要的價值基準。</span></div>
-          <div class="stock"><b>2317 鴻海</b><br><span class="small">收 247.5 元、上漲 7.5 元；AI 伺服器主線中相對不擁擠的權值股，若拉回量縮更值得優先看。</span></div>
-          <div class="stock"><b>2382 廣達</b><br><span class="small">收 308 元、上漲 18 元；雖已轉強，但位階仍比高熱千金股舒服，適合觀察回測承接。</span></div>
-          <div class="stock"><b>3231 緯創</b><br><span class="small">收 140 元、上漲 7.5 元；屬主線中位階代表，若資金往 AI 伺服器內部輪動，通常不會缺席。</span></div>
-          <div class="stock"><b>2303 聯電</b><br><span class="small">收 116 元、上漲 8 元；半導體族群擴散時，聯電是相對務實的觀察標的，但前提仍是不要在急拉當下追價。</span></div>
+          <div class="stock"><b>2330 台積電</b><br><span class="small">5/21 收 2,230 元、上漲 45 元。ADR 續漲 1.38%，但台股已先大漲，今天若拉回不破壞結構，仍是最核心的價值基準。</span></div>
+          <div class="stock"><b>2317 鴻海</b><br><span class="small">收 247.5 元、上漲 7.5 元。AI 供應鏈裡相對沒那麼擁擠，若早盤回檔量縮，反而比追最熱股更舒服。</span></div>
+          <div class="stock"><b>2382 廣達</b><br><span class="small">收 308 元、上漲 18 元。雖然昨天已轉強，但相較高位 IC 設計，位階仍偏中段，適合看回測承接。</span></div>
+          <div class="stock"><b>3231 緯創</b><br><span class="small">收 140 元、上漲 7.5 元。中位階 AI 伺服器代表股，若今天不是最熱、卻能穩定收量，價值感會更高。</span></div>
+          <div class="stock"><b>2303 聯電</b><br><span class="small">收 116 元、上漲 8 元。半導體修復若從權值往二線擴散，聯電是較務實也較不擁擠的觀察點。</span></div>
         </div>
       </div>
 
@@ -239,47 +238,46 @@
         <h2>個股升溫區</h2>
         <div class="quote">升溫區定義：短線題材強、資金集中、但追價風險較高。</div>
         <div class="watchlist" style="margin-top:14px;">
-          <div class="stock"><b>2454 聯發科</b><br><span class="small">5/21 收 3,550 元、上漲 320 元；昨天幾乎直接把情緒推到滿，今天若再跳高，追價容錯會很低。</span></div>
-          <div class="stock"><b>3037 欣興</b><br><span class="small">收 905 元、上漲 82 元；PCB 強度非常明確，但漲幅過快後最怕開高換手不順。</span></div>
-          <div class="stock"><b>6669 緯穎</b><br><span class="small">收 5,345 元、上漲 435 元；AI 伺服器最高熱區之一，續強屬情緒加分，但不適合作為新追價起點。</span></div>
-          <div class="stock"><b>2327 國巨</b><br><span class="small">收 572 元、上漲 52 元；被動元件資金集中很明顯，短線若再爆量急拉，容易從強勢變擁擠。</span></div>
-          <div class="stock"><b>2492 華新科</b><br><span class="small">收 266 元、上漲 24 元；屬短線熱區代表，若今天再被情緒推高，風險報酬會快速變差。</span></div>
+          <div class="stock"><b>2454 聯發科</b><br><span class="small">5/21 收 3,550 元、上漲 320 元。權值股裡最明顯的升溫代表，若再開高急拉，重點是持股管理，不是追。</span></div>
+          <div class="stock"><b>2327 國巨</b><br><span class="small">收 572 元、上漲 52 元。被動元件已是資金最集中的區域之一，續強可視為熱度延續，但報酬風險比開始壓縮。</span></div>
+          <div class="stock"><b>2492 華新科</b><br><span class="small">收 266 元、上漲 24 元。短線漲速快，若量價再失控，容易從主線補漲轉成短線過熱。</span></div>
+          <div class="stock"><b>3711 日月光投控</b><br><span class="small">收 510 元、上漲 34 元。若封測被市場當成主線延伸，會很吸金，但也更容易進入高檔震盪。</span></div>
+          <div class="stock"><b>3037 欣興</b><br><span class="small">收 905 元、上漲 82 元。PCB 強股代表，昨天幾乎把市場最熱情緒都收進來，今天只適合觀察續強與爆量，並不適合情緒追高。</span></div>
         </div>
       </div>
 
       <div class="card span-6">
         <h2>方舟框架操作提醒</h2>
         <ul>
-          <li>價值區不是等神奇最低點，而是等主線好股回到相對合理的位置再分批承接。</li>
-          <li>升溫區的重點是續抱管理與部位控制；若風控需要調節，優先看已正報酬且明顯進入升溫區的標的。</li>
-          <li>昨天台股已先反映一大段利多，今天若盤面只剩高熱股撐場，寧願少做，也不要把紀律讓位給 FOMO。</li>
-          <li>真正健康的續強，是權值穩、主線擴散、拉回有人接；不是每一檔都衝漲停才叫多頭。</li>
+          <li>價值區不是猜最低點，而是等主線核心在相對合理的位置被市場錯價，然後觀察承接是否站得住。</li>
+          <li>升溫區的核心是續抱管理與部位控制；當市場都看到了，風險報酬通常就沒有想像中漂亮。</li>
+          <li>昨天已經先大漲一天，今天更要避免把「怕踏空」包裝成紀律；有位置的人先看續航，沒位置的人先看回檔品質。</li>
+          <li>若今天盤勢只剩少數最熱標的獨走，就寧願放慢，不用為了證明自己看對方向而去買最擁擠的位置。</li>
         </ul>
       </div>
 
       <div class="card span-6">
         <h2>TWSE 官方基準</h2>
         <ul>
-          <li>官方收盤日期：115/05/21</li>
           <li>加權指數：41,368.21</li>
           <li>漲跌點數：+1,347.39</li>
           <li>成交金額：1,047,623,792,398 元</li>
           <li>成交股數：12,662,318,814 股</li>
           <li>成交筆數：5,214,557 筆</li>
-          <li>半導體類指數：+3.22%｜電腦及週邊設備類：+5.03%｜電子零組件類：+6.62%｜電子通路類：+3.47%｜航運類：+1.14%</li>
+          <li>半導體類指數：+3.22%｜電子零組件類：+6.62%｜電腦及週邊設備類：+5.03%｜航運類：+1.14%</li>
         </ul>
-        <div class="small" style="margin-top:12px;">台股收盤與成交金額優先採 TWSE 官方資料；個股價值區與升溫區也以 5/21 官方收盤表為基準。</div>
+        <div class="small" style="margin-top:12px;">台股收盤、成交金額與類股強弱優先採 TWSE 官方資料；價值區與升溫區個股收盤價亦以 5/21 官方收盤表為主。</div>
       </div>
 
       <div class="card span-12">
         <h2>資料來源與抓取時間</h2>
         <ul>
-          <li>資料整理 / 抓取時間：台北時間 2026/05/22 08:06</li>
-          <li>價格來源：TWSE 臺灣證券交易所 MI_INDEX、FMTQIK、STOCK_DAY_ALL；美股與 ADR 採 Finviz 公開 quote 頁；費半與 VIX 採 Tallac Options；NQ / 油 / 金採 Finviz futures。</li>
-          <li>新聞來源：AP、Reuters、Finviz 市場摘要。</li>
-          <li>資料性質提醒：台股為 5/21 官方收盤資料；美股股票與 ADR 為 5/21 美國正規盤收盤；Nasdaq 100 期貨、油金為 5/22 台北時間盤前即時期貨，彼此可能存在時間差。</li>
+          <li>資料整理 / 抓取時間：2026/05/22 08:09（台北時間）</li>
+          <li>價格來源：TWSE 臺灣證券交易所 MI_INDEX、FMTQIK、STOCK_DAY；海外資產與期貨採 Yahoo Finance 公開報價資料。</li>
+          <li>新聞來源：AP News、Reuters 公開市場報導、經濟日報、中央社。</li>
+          <li>資料性質提醒：台股為 2026/05/21 官方收盤；美股為 2026/05/21 美東收盤；ADR、期貨、油金與盤前風向可能與台股開盤時間存在時差。</li>
         </ul>
-        <div class="foot">這份晨報偏向盤前框架整理，不是即時喊單。今天若權值穩、AI 伺服器續強、升溫區不失控，盤勢就還有續航；若只剩高熱股硬撐，就要把節奏收回到風控與等回測。</div>
+        <div class="foot">這份晨報偏向盤前框架整理，不是即時喊單。今天如果主線能從 2330 / 2454 延伸到 AI 伺服器與 PCB，盤就有機會走成健康擴散；如果只剩升溫區互相追價，反而要把節奏放慢。</div>
       </div>
     </section>
   </div>
