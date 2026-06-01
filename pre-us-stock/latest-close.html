@@ -8,7 +8,7 @@
     :root {
       --bg: #07131d;
       --panel: rgba(10, 20, 31, 0.9);
-      --panel2: rgba(18, 34, 48, 0.96);
+      --panel-strong: rgba(13, 28, 42, 0.96);
       --text: #ecf3ff;
       --muted: #a8bbd4;
       --line: rgba(148, 163, 184, 0.18);
@@ -20,7 +20,7 @@
     * { box-sizing: border-box; }
     body {
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", sans-serif;
+      font-family: "Avenir Next", "PingFang TC", "Noto Sans TC", sans-serif;
       background:
         radial-gradient(circle at top left, rgba(103, 232, 249, 0.14), transparent 24%),
         radial-gradient(circle at top right, rgba(34, 197, 94, 0.14), transparent 20%),
@@ -97,7 +97,7 @@
     .tag {
       padding: 8px 12px;
       border-radius: 999px;
-      background: var(--panel2);
+      background: var(--panel-strong);
       border: 1px solid var(--line);
       font-size: 14px;
     }
@@ -109,8 +109,8 @@
   <div class="wrap">
     <section class="hero">
       <div class="eyebrow">台股收盤彙報｜2026/06/01｜今日收盤結構版</div>
-      <h1>台股站穩 4 萬 5，<br>收 45,337.91，AI 主線續強但高低位開始再分流</h1>
-      <p class="lead">今天 `2026/06/01` 收盤後，TWSE 官方 `MI_5MINS_HIST` 已可確認加權指數開高低收：開盤 `44,872.82`、最高 `45,931.10`、最低 `44,872.82`、收盤 `45,337.91`，較前一交易日 `2026/05/29` 官方收盤 `44,732.94` 上漲 `604.97` 點、漲幅 `1.35%`。同時 TWSE 官方 `MI_INDEX` 大盤統計資訊顯示，今日集中市場總成交金額約 `1.4771` 兆元，其中股票成交金額約 `1.3702` 兆元，上市股票上漲 `767` 檔、下跌 `253` 檔、平盤 `54` 檔。盤面主軸仍是 `COMPUTEX / 黃仁勳 / AI 伺服器 / 記憶體`，但結構上不是所有強股一起衝，像 `2454 聯發科`、`2308 台達電`、`3231 緯創`、`6669 緯穎` 已經開始和 `2330 台積電`、`2317 鴻海`、`2382 廣達`、`2344 華邦電`、`2327 國巨` 出現分流。</p>
+      <h1>台股收 45,337.91 續站 4 萬 5，<br>主線仍在 AI，但已從單點追價轉成主線內輪動</h1>
+      <p class="lead">今天 2026/06/01 收盤後，TWSE 官方 MI_5MINS_HIST 顯示加權指數開 44,872.82、盤中高 45,931.10、低 44,872.82、收 45,337.91，較前一交易日 2026/05/29 上漲 604.97 點、漲幅 1.35%。TWSE 官方 MI_INDEX 同步更新，集中市場總成交金額為 1,477,085,206,310 元，證券合計成交金額為 1,370,153,649,050 元，上市股票上漲 767 檔、下跌 253 檔、平盤 54 檔。盤面結構不是無差別噴出，而是聯發科、南亞科、廣達、緯創、華邦電等主線股接棒推升，台積電高成交定錨但收平，台達電與日月光投控轉弱，顯示市場已經進入主線內部輪動與高低切換階段。</p>
     </section>
 
     <section class="grid">
@@ -122,26 +122,26 @@
       <div class="card span-3">
         <div class="metric-label">盤中高低</div>
         <div class="metric-value neutral">45,931 → 44,873</div>
-        <div class="small">開高走高後拉回，仍穩守 45K 之上</div>
+        <div class="small">創高後留漲，收盤仍穩守 45K</div>
       </div>
       <div class="card span-3">
         <div class="metric-label">今日成交金額</div>
         <div class="metric-value neutral">1.477 兆</div>
-        <div class="small">TWSE MI_INDEX｜股票成交約 1.370 兆</div>
+        <div class="small">證券合計 1.370 兆｜TWSE MI_INDEX</div>
       </div>
       <div class="card span-3">
-        <div class="metric-label">盤面主軸</div>
-        <div class="metric-value up">AI 續熱</div>
-        <div class="small">台積電 / 鴻海 / 廣達 / 記憶體 / 國巨</div>
+        <div class="metric-label">盤面關鍵</div>
+        <div class="metric-value up">主線輪動</div>
+        <div class="small">AI 伺服器 / IC 設計 / 記憶體續熱</div>
       </div>
 
       <div class="card span-8">
         <h2>今日台股收盤一句話</h2>
-        <div class="quote">一句話先看：今天不是全面噴出的無差別追價盤，而是 AI 大旗還在、指數續創高，但資金已經開始在權值核心、伺服器、記憶體、被動元件與高位股之間做第二輪篩選。</div>
+        <div class="quote">一句話先看：今天多頭沒有斷，斷的是「只要沾到 AI 就一起噴」的幻想，市場已經切進主線內部比強弱、比位階、比承接品質的第二階段。</div>
         <ul style="margin-top: 14px;">
-          <li>加權指數收 `45,337.91`，盤中最高來到 `45,931.10`，代表多頭趨勢沒有斷，市場仍願意把錢往台股主線推。</li>
-          <li>真正有辨識度的是 `2330 台積電 +5.68%`、`2317 鴻海 +6.33%`、`2382 廣達 +10%`、`2344 華邦電 +9.94%`、`2327 國巨 +7.57%` 同步強，顯示今天強的不是單一題材，而是 AI 周邊鏈條一起發動。</li>
-          <li>但 `2454 聯發科 -1.92%`、`3231 緯創 -3.2%`、`6669 緯穎 -5.75%`、`2881 富邦金 -3.38%` 又提醒一件事：位階、擁擠度與資金切換，已經比單純「有沒有 AI」更重要。</li>
+          <li>加權指數收 45,337.91，雖然從盤中高點 45,931.10 拉回，但尾盤仍穩穩留在 45,000 上方，代表趨勢沒有被破壞。</li>
+          <li>今天最有辨識度的不是台積電硬拉，而是 2454 聯發科、2408 南亞科、2382 廣達、3231 緯創、2344 華邦電同步轉強，主線資金明顯擴散。</li>
+          <li>同一時間 2308 台達電、3711 日月光投控收黑，2330 台積電高成交但收平，代表市場已經開始挑位置，不是每一檔權值都享有同樣溢價。</li>
         </ul>
       </div>
 
@@ -152,37 +152,37 @@
           <span class="tag">高點 45,931.10</span>
           <span class="tag">低點 44,872.82</span>
           <span class="tag">上漲 604.97</span>
-          <span class="tag">成交值 1.477 兆</span>
-          <span class="tag">股票成交 1.370 兆</span>
+          <span class="tag">總成交 1.477 兆</span>
+          <span class="tag">股票 767 漲 / 253 跌</span>
         </div>
         <ul style="margin-top: 14px;">
-          <li>今天結構屬「開高創高、尾盤留漲」，雖然沒有收在最高，但守住 `45,000`，代表高檔獲利了結尚未破壞多頭框架。</li>
-          <li>TWSE 官方 `MI_INDEX` 已更新：今日集中市場總成交金額約 `1.4771` 兆元，若只看股票成交，約 `1.3702` 兆元，量能仍維持在高檔熱區。</li>
-          <li>上市股票漲跌家數為 `767` 漲、`253` 跌、`54` 平，代表今天不是只靠少數權值股硬拉，而是盤面廣度也站在多方這邊。</li>
-          <li>從 Yahoo 成交值排行看，市場資金最集中在 `2330 / 2454 / 2317 / 2344 / 2408 / 2303 / 2382`，量能仍明顯鎖在電子主線。</li>
+          <li>今天屬於開高衝高後的高檔換手盤，沒有收最高，但也沒有出現明顯長黑反轉，屬偏強整理。</li>
+          <li>TWSE 官方大盤統計資訊顯示，證券合計成交金額約 1.3702 兆元、總計約 1.4771 兆元，量能仍維持在高熱區，不是縮量保守盤。</li>
+          <li>漲跌家數 767 比 253，說明今天不是只靠少數權值撐指數，而是有明顯的盤面廣度支撐。</li>
+          <li>成交值前段資金仍集中在 2330、2454、2317、2344、2408、2303、2382，電子主線沒有鬆動。</li>
         </ul>
       </div>
 
       <div class="card span-12">
         <h2>主流與分化族群</h2>
         <div class="watchlist">
-          <div class="stock"><b>主流一｜AI 伺服器續強</b><br><span class="small">`2317` 鴻海收 `293.5`、漲 `6.33%`，`2382` 廣達收 `372.5`、漲 `10%`，`2356` 英業達收 `77.2`、漲 `9.78%`。Dell 財測與 COMPUTEX 題材讓伺服器鏈續熱。</span></div>
-          <div class="stock"><b>主流二｜記憶體與面板型人氣股</b><br><span class="small">`2344` 華邦電收 `168`、漲 `9.94%`，`2408` 南亞科收 `381.5`、漲 `1.04%`，記憶體資金仍有高度集中。</span></div>
-          <div class="stock"><b>主流三｜權王與供應鏈定錨</b><br><span class="small">`2330` 台積電收 `2355`、漲 `5.68%`，今天指數能穩在 `45K` 上方，權王續強是最關鍵的結構支撐。</span></div>
-          <div class="stock"><b>主流四｜PCB / 被動元件回到聚光燈</b><br><span class="small">`3037` 欣興收 `1050`、漲 `6.72%`，`2327` 國巨收 `790`、漲 `7.57%`，代表資金開始往 AI 週邊中游擴散。</span></div>
-          <div class="stock"><b>分化一｜高位伺服器股震盪</b><br><span class="small">`3231` 緯創收 `174`、跌 `3.2%`，`6669` 緯穎收 `5515`、跌 `5.75%`，主線沒壞，但高位股短線籌碼開始變重。</span></div>
-          <div class="stock"><b>分化二｜類股強弱差很大</b><br><span class="small">TWSE 官方類股指數顯示 `塑膠 +7.79%`、`電腦及週邊 +5.73%`、`航運 +3.79%`、`金融保險 +1.88%` 偏強，但 `半導體 +0.58%`，代表權值與個股之間的走法其實很分化。</span></div>
+          <div class="stock"><b>主流一｜AI 伺服器鏈續強</b><br><span class="small">2317 鴻海收 293.5、漲 1.56%；2382 廣達收 372.5、漲 9.88%；2356 英業達收 77.2、漲 9.97%；3231 緯創收 174、漲 9.78%。資金仍在伺服器鏈內集中，只是從單一高價股擴散到中段族群。</span></div>
+          <div class="stock"><b>主流二｜記憶體人氣明顯升溫</b><br><span class="small">2408 南亞科收 381.5、漲 9.94%；2344 華邦電收 168、漲 6.33%。今天記憶體不是配角，而是主線資金的明顯承接區。</span></div>
+          <div class="stock"><b>主流三｜IC 設計與電子中游接棒</b><br><span class="small">2454 聯發科收 4,555、漲 5.68%；2327 國巨收 790、漲 7.05%；2303 聯電收 146、漲 1.04%。市場願意往高辨識度、較有延續性的電子中樞擴散。</span></div>
+          <div class="stock"><b>分化一｜台積電高成交但沒有續噴</b><br><span class="small">2330 台積電成交值約 828.22 億元、收 2,355 平盤。它仍是資金錨點，但今天不是靠它一檔把全市場拉上去。</span></div>
+          <div class="stock"><b>分化二｜部分高價權值開始休息</b><br><span class="small">2308 台達電收 2,420、跌 1.02%；3711 日月光投控收 601、跌 1.64%。主線還在，只是資金更偏好短線辨識度高、動能更強的分支。</span></div>
+          <div class="stock"><b>分化三｜類股強弱差很大</b><br><span class="small">TWSE 官方類股指數顯示塑膠 +7.79%、資訊服務 +7.47%、電腦及週邊設備 +5.73%、光電 +5.29%，但半導體只有 +0.58%。代表今天是輪動擴散，不是半導體全面暴衝。</span></div>
         </div>
       </div>
 
       <div class="card span-12">
         <h2>今日強弱關鍵股</h2>
         <div class="watchlist">
-          <div class="stock"><b>權王定錨｜2330 台積電</b><br><span class="small">收 `2355`、漲 `5.68%`，成交值約 `828.22` 億元。今天指數能收在 `45,337.91`，台積電是最核心的拉抬力量。</span></div>
-          <div class="stock"><b>情緒龍頭｜2317 鴻海</b><br><span class="small">收 `293.5`、漲 `6.33%`，盤中一度站上 `304.5`。AI 伺服器與黃仁勳題材最直接反映在它身上。</span></div>
-          <div class="stock"><b>強勢擴散代表｜2382 廣達 / 2356 英業達</b><br><span class="small">分別收 `372.5`、`77.2`，漲 `10%`、`9.78%`，說明伺服器資金沒有只鎖在單一權值，而是往整條鏈擴散。</span></div>
-          <div class="stock"><b>人氣主流｜2344 華邦電 / 2327 國巨</b><br><span class="small">記憶體與被動元件同步偏強，分別漲 `9.94%`、`7.57%`，代表盤面不是只有純 AI 算力股在漲。</span></div>
-          <div class="stock"><b>弱勢對照｜2454 聯發科 / 6669 緯穎</b><br><span class="small">分別跌 `1.92%`、`5.75%`，提醒短線位階越高、擁擠度越高，越可能先被資金拿來做調節。</span></div>
+          <div class="stock"><b>領攻核心｜2454 聯發科</b><br><span class="small">收 4,555、漲 5.68%，成交值約 774.59 億元。今天最具指標意義的權值強股，不只是漲，還把高價電子情緒重新點起來。</span></div>
+          <div class="stock"><b>人氣雙箭頭｜2408 南亞科 / 2344 華邦電</b><br><span class="small">分別收 381.5、168，漲 9.94%、6.33%。記憶體今天是主線中的升溫分支，資金密度很高。</span></div>
+          <div class="stock"><b>強勢擴散代表｜2382 廣達 / 3231 緯創</b><br><span class="small">分別漲 9.88%、9.78%，把 AI 伺服器題材從權值延伸到整條供應鏈，顯示盤勢不是只剩單兵突擊。</span></div>
+          <div class="stock"><b>量能定錨｜2330 台積電</b><br><span class="small">收 2,355 平盤，成交值約 828.22 億元。它今天比較像讓市場敢繼續做多的安全錨，不是短線最強的進攻股。</span></div>
+          <div class="stock"><b>弱勢對照｜2308 台達電 / 3711 日月光投控</b><br><span class="small">分別跌 1.02%、1.64%。這兩檔轉弱提醒一件事：當主線很熱時，資金反而更會避開位階尷尬、節奏偏慢的標的。</span></div>
         </div>
       </div>
 
@@ -190,11 +190,11 @@
         <h2>個股價值區</h2>
         <div class="quote">價值區定義：主線內、位階相對合理、拉回後值得優先觀察。</div>
         <div class="watchlist" style="margin-top: 14px;">
-          <div class="stock"><b>2330 台積電</b><br><span class="small">今天重新成為權值主軸，若後續不是急拉而是量縮整理，仍是主線最重要的價值錨點。</span></div>
-          <div class="stock"><b>2308 台達電</b><br><span class="small">收 `2420`、小跌 `0.47%`。AI 基建核心股，今天相對沒那麼熱，反而保留拉回承接的節奏感。</span></div>
-          <div class="stock"><b>2303 聯電</b><br><span class="small">收 `146`、漲 `0.6%`。盤中高低震盪大，若後續整理後量縮，仍屬主線半導體內可觀察名單。</span></div>
-          <div class="stock"><b>3711 日月光投控</b><br><span class="small">收 `601`、漲 `3.48%`。封測位階相較前排強勢股沒那麼擁擠，較符合方舟框架的承接邏輯。</span></div>
-          <div class="stock"><b>3231 緯創</b><br><span class="small">收 `174`、跌 `3.2%`。主線沒脫隊，但今天先被調節，若之後回穩，比直接追漲停族群更有節奏。</span></div>
+          <div class="stock"><b>2330 台積電</b><br><span class="small">今天高成交但收平，代表它仍是市場風險偏好核心錨點。若後續量縮整理、不破支撐，仍是方舟框架下的核心價值區。</span></div>
+          <div class="stock"><b>2454 聯發科</b><br><span class="small">今天重新成為權值進攻中心，但相較最擁擠的短線題材股，邏輯更完整、延續性也更強，拉回反而值得優先觀察。</span></div>
+          <div class="stock"><b>2303 聯電</b><br><span class="small">收 146、漲 1.04%，漲幅不誇張但量能扎實。若主線從高價股擴散到中位階半導體，聯電通常是更舒服的承接標的。</span></div>
+          <div class="stock"><b>2317 鴻海</b><br><span class="small">今天仍在主線內且沒有走到最極端的追價區，若短線震盪後守住關鍵均衡區，仍屬優先觀察名單。</span></div>
+          <div class="stock"><b>3711 日月光投控</b><br><span class="small">今天收黑不是壞事，反而讓它和伺服器鏈升溫股拉開位階差。若後續回穩，封測中樞有機會成為主線內補漲區。</span></div>
         </div>
       </div>
 
@@ -202,50 +202,42 @@
         <h2>個股升溫區</h2>
         <div class="quote">升溫區定義：短線題材強、資金集中、但追價風險較高。</div>
         <div class="watchlist" style="margin-top: 14px;">
-          <div class="stock"><b>2317 鴻海</b><br><span class="small">今天是 AI 伺服器情緒最集中的大權值之一，熱度很高，但短線追價成本也同步變高。</span></div>
-          <div class="stock"><b>2382 廣達</b><br><span class="small">直接收 `372.5`、漲 `10%`，題材與資金高度集中，屬典型升溫區。</span></div>
-          <div class="stock"><b>2356 英業達</b><br><span class="small">大漲 `9.78%`，屬短線資金衝最兇的伺服器鏈之一，續抱可以，情緒追價風險高。</span></div>
-          <div class="stock"><b>2344 華邦電</b><br><span class="small">記憶體人氣最強的代表股之一，量價齊揚，但升溫後波動通常也會放大。</span></div>
-          <div class="stock"><b>2327 國巨</b><br><span class="small">被動元件重回熱區，今天漲 `7.57%`。如果明天再開高，重點不是追，而是看承接強不強。</span></div>
+          <div class="stock"><b>2382 廣達</b><br><span class="small">今天收 372.5、漲 9.88%，屬典型情緒與資金同步點火的升溫股，續強可以觀察，但追價成本已明顯上升。</span></div>
+          <div class="stock"><b>3231 緯創</b><br><span class="small">今天漲 9.78%，走法很有情緒斜率。這類股若隔天再開高，重點不是更興奮，而是看承接是否跟得上。</span></div>
+          <div class="stock"><b>2408 南亞科</b><br><span class="small">記憶體人氣最熱代表之一，今天幾乎直上漲停結構。強是真的強，但也意味著隔日震盪幅度可能更大。</span></div>
+          <div class="stock"><b>2344 華邦電</b><br><span class="small">成交值高、人氣高、題材辨識度高，是今天盤面最容易吸走短線資金的升溫股之一。</span></div>
+          <div class="stock"><b>2327 國巨</b><br><span class="small">今天漲 7.05%，代表資金已經外溢到電子中游高彈性股。若明天續開高，應優先看量價承接，不宜只看紅黑追價。</span></div>
         </div>
       </div>
 
       <div class="card span-12">
         <h2>明日觀察重點 / 2~3 種後續走勢情境</h2>
         <div class="watchlist">
-          <div class="stock"><b>情境 A｜台積電與鴻海續穩，指數再挑戰 45,900</b><br><span class="small">若 `2330 / 2317 / 2382 / 2344` 持續穩強，今天高點 `45,931.10` 會很快再被測試。</span></div>
-          <div class="stock"><b>情境 B｜權值休息，資金輪到半導體中段與 PCB</b><br><span class="small">若 `2303 / 3711 / 3037 / 2327` 接棒，這會是更健康的多頭擴散，不是只靠最熱幾檔硬撐。</span></div>
-          <div class="stock"><b>情境 C｜升溫區回檔，先回測 45,000 整數關</b><br><span class="small">如果 `2317 / 2382 / 2356 / 2344` 明天同步震盪轉弱，`45,000` 會是第一個重要情緒與結構觀察位。</span></div>
+          <div class="stock"><b>情境 A｜主線續擴散，指數再挑戰 45,900</b><br><span class="small">若 2454、2317、2382、2408 延續強勢，2330 只要不轉弱，今天高點 45,931.10 很快就會再被測試。</span></div>
+          <div class="stock"><b>情境 B｜台積電續平、題材股輪動，盤勢轉成更明顯挑股盤</b><br><span class="small">若 2330 仍偏穩但不發動，市場會繼續在記憶體、伺服器、IC 設計之間做高低切換，這是健康但不舒服的輪動盤。</span></div>
+          <div class="stock"><b>情境 C｜升溫區先震盪，回測 45,000 整數關</b><br><span class="small">若 2382、3231、2408、2344 同步轉弱，短線熱錢退潮，45,000 會是第一個要觀察的情緒與結構支撐位。</span></div>
         </div>
       </div>
 
       <div class="card span-6">
         <h2>方舟框架操作提醒</h2>
         <ul>
-          <li>今天重點不是「又創高所以什麼都能追」，而是確認市場到底在買主線核心，還是在擠升溫區。</li>
-          <li>價值區優先看主線內拉回後還有人承接的標的；升溫區更適合持股管理與分批調節，不適合怕踏空加碼。</li>
-          <li>如果明天延續強勢，但只剩少數最熱股再拉，風險會比今天更高；真正健康的是權值穩、輪動廣、拉回有人接。</li>
-          <li>方舟框架核心不是猜最高點，而是把資金放在錯價區。越是情緒熱，越要分清楚「核心續抱」與「過熱不追」。</li>
+          <li>今天不是用「指數創高」四個字就能合理化所有追價，真正要看的，是主線資金到底停在價值區，還是開始擠升溫區。</li>
+          <li>價值區優先看主線內邏輯沒壞、位階還有空間、拉回後有人接的標的；升溫區更適合做持股管理與調節節奏，不適合用怕錯過的心態硬追。</li>
+          <li>市場越熱，越要把承接品質拆開看。能夠量縮守穩的核心股，比情緒噴出但隔天容易大震盪的股票，更符合方舟的長期報酬邏輯。</li>
+          <li>方舟框架不是猜哪一檔明天最飆，而是持續把資金擺在市場錯價、錯殺或位階合理的位置上，等市場自己修正定價。</li>
         </ul>
       </div>
 
       <div class="card span-6">
         <h2>資料來源與抓取時間</h2>
-        <div class="quote">資料整理 / 抓取時間（台北時間）：2026/06/01 13:48</div>
+        <div class="quote">資料整理 / 抓取時間（台北時間）：2026/06/01 13:58</div>
         <ul style="margin-top: 14px;">
-          <li>價格來源：TWSE `MI_5MINS_HIST`（今日官方開高低收）、TWSE `MI_INDEX`（今日官方成交金額、大盤統計、類股指數、漲跌家數）；台股收盤個股與成交值排行輔以 Yahoo 股市公開排行 / 報價頁；TWSE `FMTQIK`（今日月表抓取時尚未更新到今日）。</li>
-          <li>新聞來源：Google News、中央社、經濟日報、ETtoday 財經雲。</li>
-          <li>參考連結：
-            <a href="https://www.twse.com.tw/indicesReport/MI_5MINS_HIST?response=json&amp;date=20260601">TWSE MI_5MINS_HIST 2026/06/01</a>、
-            <a href="https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?response=json&amp;date=20260601&amp;type=ALL">TWSE MI_INDEX 2026/06/01</a>、
-            <a href="https://www.twse.com.tw/rwd/zh/afterTrading/FMTQIK?response=json&amp;date=20260601">TWSE FMTQIK 2026/06/01</a>、
-            <a href="https://tw.stock.yahoo.com/rank/turnover">Yahoo 台股成交金額排行</a>、
-            <a href="https://www.cna.com.tw/news/afe/202606010056.aspx">中央社盤中快訊 2026/06/01</a>、
-            <a href="https://news.google.com/rss/search?q=%E5%8F%B0%E8%82%A1%202026%2F06%2F01%20%E6%94%B6%E7%9B%A4%20AI%20%E5%8D%8A%E5%B0%8E%E9%AB%94&amp;hl=zh-TW&amp;gl=TW&amp;ceid=TW:zh-Hant">Google News 搜尋聚合</a>。
-          </li>
-          <li>資料性質提醒：本頁同時包含今日正式收盤指數、官方成交金額、今日個股終場與盤後新聞整理；收盤、盤中、盤後、ADR、期貨與官方月表更新之間可能存在時間差。</li>
+          <li>價格來源：台股加權指數開高低收優先使用 <a href="https://www.twse.com.tw/indicesReport/MI_5MINS_HIST?response=json&amp;date=20260601">TWSE MI_5MINS_HIST</a>；成交金額、漲跌家數、類股指數與個股當日收盤優先使用 <a href="https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?response=json&amp;date=20260601&amp;type=ALL">TWSE MI_INDEX</a> 與各股 <a href="https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?response=json&amp;date=20260601&amp;stockNo=2330">TWSE STOCK_DAY</a>；<a href="https://www.twse.com.tw/rwd/zh/afterTrading/FMTQIK?response=json&amp;date=20260601">TWSE FMTQIK</a> 於本次抓取時尚未更新到今日。</li>
+          <li>新聞來源：<a href="https://news.google.com/rss/search?q=%E5%8F%B0%E8%82%A1%202026%2F06%2F01%20%E6%94%B6%E7%9B%A4%20AI%20%E5%8D%8A%E5%B0%8E%E9%AB%94&amp;hl=zh-TW&amp;gl=TW&amp;ceid=TW:zh-Hant">Google News 搜尋聚合</a>、<a href="https://money.udn.com/money/amp/story/5607/9537573">經濟日報 / 台股開高直搗 45,500 點關卡</a>、<a href="https://money.udn.com/money/amp/story/5607/9537565">中央社 / 台股開盤漲 139.88 點</a>。</li>
+          <li>資料性質提醒：本頁以今日台股正式收盤與盤後官方資料為主；盤中新聞、盤前題材、收盤數字、ADR、期貨與官方月表更新時間之間可能存在時間差。</li>
         </ul>
-        <div class="foot">此內容僅供資訊整理與研究參考，不構成投資建議。</div>
+        <div class="foot">此內容僅供資料整理與研究參考，不構成投資建議。</div>
       </div>
     </section>
   </div>
