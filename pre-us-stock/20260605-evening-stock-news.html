@@ -6,19 +6,18 @@
   <title>2026/06/05 美股開盤前彙報</title>
   <style>
     :root {
-      --bg: #f3ede3;
-      --bg-soft: #efe4d2;
-      --ink: #1e2936;
-      --muted: #5e6974;
-      --line: #d7cdbc;
-      --card: rgba(255, 251, 244, 0.95);
-      --card-strong: #fff2dd;
-      --accent: #b75a32;
-      --accent-2: #1d5f66;
+      --bg: #f4efe7;
+      --ink: #20303a;
+      --muted: #5f6b75;
+      --line: #d5cab8;
+      --card: rgba(255, 251, 245, 0.95);
+      --card-strong: #fff1dc;
+      --accent: #b55d39;
+      --accent-2: #1e6264;
       --up: #197248;
       --down: #af2f2f;
-      --warn: #9a6d10;
-      --shadow: 0 20px 44px rgba(72, 52, 24, 0.12);
+      --warn: #98660c;
+      --shadow: 0 18px 44px rgba(66, 48, 26, 0.12);
     }
     * { box-sizing: border-box; }
     body {
@@ -27,9 +26,9 @@
       font-family: "Avenir Next", "Noto Sans TC", "PingFang TC", sans-serif;
       line-height: 1.72;
       background:
-        radial-gradient(circle at top right, rgba(183, 90, 50, 0.10), transparent 30%),
-        radial-gradient(circle at top left, rgba(29, 95, 102, 0.10), transparent 26%),
-        linear-gradient(180deg, #f8f3ea 0%, var(--bg) 100%);
+        radial-gradient(circle at top right, rgba(181, 93, 57, 0.12), transparent 28%),
+        radial-gradient(circle at top left, rgba(30, 98, 100, 0.10), transparent 28%),
+        linear-gradient(180deg, #faf5ed 0%, var(--bg) 100%);
     }
     .wrap {
       max-width: 1180px;
@@ -45,8 +44,8 @@
     .hero {
       padding: 28px;
       background:
-        linear-gradient(135deg, rgba(183, 90, 50, 0.12), rgba(29, 95, 102, 0.08)),
-        rgba(255, 251, 244, 0.97);
+        linear-gradient(135deg, rgba(181, 93, 57, 0.13), rgba(30, 98, 100, 0.08)),
+        rgba(255, 251, 245, 0.98);
     }
     .eyebrow {
       color: var(--accent);
@@ -108,7 +107,7 @@
       padding: 16px 18px;
       border-left: 4px solid var(--accent);
       border-radius: 16px;
-      background: rgba(183, 90, 50, 0.08);
+      background: rgba(181, 93, 57, 0.08);
     }
     .pill-row {
       display: flex;
@@ -139,7 +138,6 @@
       text-align: left;
       vertical-align: top;
     }
-    th { color: #2d3942; }
     .mini-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -161,204 +159,255 @@
       color: var(--muted);
       font-size: 13px;
     }
+    .tag {
+      display: inline-block;
+      padding: 5px 10px;
+      border-radius: 999px;
+      background: rgba(30, 98, 100, 0.08);
+      border: 1px solid var(--line);
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
     a { color: var(--accent-2); }
   </style>
 </head>
 <body>
   <div class="wrap">
     <section class="hero">
-      <div class="eyebrow">美股開盤前彙報｜2026/06/05｜17:04 台北時間整理</div>
-      <h1>今晚先看 NFP，<br>AI 主線沒壞但高位半導體先回到挑股模式</h1>
-      <p class="lead">今晚盤前不是全面風險關閉，而是「Broadcom 讓高位晶片股先降溫、NFP 讓資金先等數字、但 TSM ADR 與 NVIDIA 仍沒明顯轉弱」的結構。對台股隔日最重要的翻譯是：AI / 半導體主線仍在，但舒服的位置會更偏價值區，升溫區更適合控部位、少追價。</p>
+      <div class="eyebrow">美股開盤前彙報｜2026/06/05｜2026/06/05 17:10 台北時間整理</div>
+      <h1>今晚像是高位科技先整理，但主線還沒斷</h1>
+      <p class="lead">今晚最關鍵的組合不是單看指數，而是 Nasdaq 100 期貨 -1.32%、TSM ADR +6.33%、NVIDIA +3.56% 是否同步穩住。依方舟框架，主線仍鎖定 AI / 半導體 / 先進封裝，但操作節奏應回到價值區優先、升溫區偏調節。</p>
     </section>
 
     <section class="grid">
+      
       <div class="card span-3">
         <div class="metric-label">道瓊期貨</div>
-        <div class="metric-value neutral">51,652</div>
-        <div class="small">Investing FAQ 快照｜今日區間 51,613-51,705</div>
+        <div class="metric-value up">51,695</div>
+        <div class="small">連續報價｜06/05 17:00 台北｜+1.1%</div>
       </div>
       <div class="card span-3">
         <div class="metric-label">S&amp;P 500 期貨</div>
-        <div class="metric-value neutral">7,562.50</div>
-        <div class="small">Investing FAQ 快照｜今日區間 7,547.25-7,568.00</div>
+        <div class="metric-value down">7,560.5</div>
+        <div class="small">連續報價｜06/05 17:00 台北｜-0.69%</div>
       </div>
       <div class="card span-3">
         <div class="metric-label">Nasdaq 100 期貨</div>
-        <div class="metric-value down">30,219.50</div>
-        <div class="small">Investing FAQ 快照｜今日區間 30,063.50-30,233.00</div>
+        <div class="metric-value down">30,163</div>
+        <div class="small">連續報價｜06/05 17:00 台北｜-1.32%</div>
       </div>
       <div class="card span-3">
         <div class="metric-label">VIX</div>
-        <div class="metric-value neutral">15.40</div>
-        <div class="small">最近可驗證現貨收盤補位｜盤前風險未失控</div>
+        <div class="metric-value down">15.71</div>
+        <div class="small">最近可驗證收盤｜06/05 16:55 台北｜-2.12%</div>
       </div>
-
       <div class="card span-3">
         <div class="metric-label">費半 SOX</div>
-        <div class="metric-value neutral">13,617.5</div>
-        <div class="small">最近可驗證現貨收盤補位｜仍在高檔但波動加大</div>
+        <div class="metric-value up">13,617.5</div>
+        <div class="small">最近可驗證收盤｜06/05 05:15 台北｜+6.14%</div>
       </div>
       <div class="card span-3">
         <div class="metric-label">台積電 ADR</div>
         <div class="metric-value up">444.92</div>
-        <div class="small">盤前快照｜約 +1.85%</div>
+        <div class="small">最近可驗證收盤｜06/05 04:00 台北｜+6.33%</div>
       </div>
       <div class="card span-3">
-        <div class="metric-label">NVIDIA / AMD</div>
-        <div class="metric-value neutral">218.66 / 523.20</div>
-        <div class="small">盤前快照｜約 +1.84% / -3.56%</div>
+        <div class="metric-label">NVIDIA</div>
+        <div class="metric-value up">218.66</div>
+        <div class="small">最近可驗證收盤｜06/05 04:00 台北｜+3.56%</div>
       </div>
       <div class="card span-3">
-        <div class="metric-label">美元 / 油 / 金</div>
-        <div class="metric-value warn">99.43 / 92.35 / 4,502.95</div>
-        <div class="small">DXY 期貨 / WTI / 黃金快照</div>
+        <div class="metric-label">AMD</div>
+        <div class="metric-value up">523.2</div>
+        <div class="small">最近可驗證收盤｜06/05 04:00 台北｜+1.38%</div>
+      </div>
+      <div class="card span-3">
+        <div class="metric-label">美元指數</div>
+        <div class="metric-value up">99.26</div>
+        <div class="small">指數連續報價｜06/05 17:00 台北｜+0.06%</div>
+      </div>
+      <div class="card span-3">
+        <div class="metric-label">WTI 原油</div>
+        <div class="metric-value up">92.87</div>
+        <div class="small">連續報價｜06/05 17:00 台北｜+0.77%</div>
+      </div>
+      <div class="card span-3">
+        <div class="metric-label">黃金</div>
+        <div class="metric-value up">4,488.4</div>
+        <div class="small">連續報價｜06/05 17:00 台北｜+0.29%</div>
       </div>
 
       <div class="card span-8">
         <h2>今晚美股盤前一句話</h2>
-        <div class="quote">一句話先看：今晚比較像「AI 長線訂單沒壞，但在 Broadcom 預期落差與 NFP 前，市場先把最熱半導體拉回挑股與控位階」的盤前結構。</div>
-        <div class="pill-row">
-          <span class="pill">主線：AI / 半導體仍在</span>
-          <span class="pill">節奏：先等 NFP 再決定風險偏好</span>
-          <span class="pill">操作：價值區優先，升溫區偏調節</span>
-        </div>
+        <div class="quote">一句話先看：今晚是『AI 主線還在、但高位科技先整理』的盤前結構，尤其要盯 Nasdaq 100 期貨與美元指數 99.26 對估值的壓力。</div>
+        <ul style="margin-top: 14px;">
+          <li>今晚先看 Nasdaq 100 期貨與台積電 ADR 能否止穩，這會直接影響台股明天對 AI 主線的風險偏好。</li>
+          <li>Broadcom 財報後留下的關鍵不是需求翻空，而是市場對高位半導體的容忍度下降，會讓資金更偏向主線內的價值區。</li>
+          <li>20:30 台北時間的美國就業數據是今晚最大變數，若數據偏熱，美元與利率壓力可能蓋過個股利多。</li>
+        </ul>
       </div>
 
       <div class="card span-4">
+        <h2>盤前風險標籤</h2>
+        <div class="pill-row">
+          <span class="pill">主線：AI 晶片 / 先進製程 / 封裝測試</span>
+          <span class="pill">變數：20:30 美國就業數據</span>
+          <span class="pill">線索：Broadcom 後的高位估值壓力</span>
+          <span class="pill">觀察：TSM ADR 與 NQ 期貨同步性</span>
+          <span class="pill">策略：價值區優先，升溫區偏調節</span>
+        </div>
+      </div>
+
+      <div class="card span-12">
         <h2>盤前全球關鍵指標</h2>
-        <ul>
-          <li>盤前期貨結構偏分化：Dow 仍穩，但 Nasdaq 100 期貨相對弱，代表資金更在意科技與晶片估值壓力。</li>
-          <li>美元指數期貨在 `99.43` 一帶，沒有失控飆升，但也還沒回到明顯寬鬆的風險資產友善區。</li>
-          <li>WTI 在 `92.35`、黃金在 `4,502.95`，表示地緣風險與通膨敏感資產仍維持高檔，週末前避險需求沒有完全退。</li>
-        </ul>
+        <table>
+          <thead>
+            <tr><th>指標</th><th>最新</th><th>變動</th><th>資料性質</th><th>盤前解讀</th></tr>
+          </thead>
+          <tbody>
+            
+            <tr>
+              <td><a href="https://finance.yahoo.com/quote/YM=F">道瓊期貨</a></td>
+              <td>51,695</td>
+              <td class="up">+1.1%</td>
+              <td>連續報價</td>
+              <td>大盤風險偏好溫和，今晚不是全面 risk-off。</td>
+            </tr>
+            <tr>
+              <td><a href="https://finance.yahoo.com/quote/ES=F">S&amp;P 500 期貨</a></td>
+              <td>7,560.5</td>
+              <td class="down">-0.69%</td>
+              <td>連續報價</td>
+              <td>觀察大盤資金是否願意承接科技以外權值。</td>
+            </tr>
+            <tr>
+              <td><a href="https://finance.yahoo.com/quote/NQ=F">Nasdaq 100 期貨</a></td>
+              <td>30,163</td>
+              <td class="down">-1.32%</td>
+              <td>連續報價</td>
+              <td>台股明天電子權值的先行參考。</td>
+            </tr>
+            <tr>
+              <td><a href="https://finance.yahoo.com/quote/%5EVIX">VIX</a></td>
+              <td>15.71</td>
+              <td class="down">-2.12%</td>
+              <td>最近可驗證收盤</td>
+              <td>目前偏中低位，恐慌尚未失控。</td>
+            </tr>
+            <tr>
+              <td><a href="https://finance.yahoo.com/quote/%5ESOX">費半 SOX</a></td>
+              <td>13,617.5</td>
+              <td class="up">+6.14%</td>
+              <td>最近可驗證收盤</td>
+              <td>半導體現貨未開時，先用前一交易日收盤確認主線強弱。</td>
+            </tr>
+            <tr>
+              <td><a href="https://finance.yahoo.com/quote/TSM">台積電 ADR</a></td>
+              <td>444.92</td>
+              <td class="up">+6.33%</td>
+              <td>最近可驗證收盤</td>
+              <td>對台股定錨度最高，若先穩有利台股明天止跌。</td>
+            </tr>
+            <tr>
+              <td><a href="https://finance.yahoo.com/quote/NVDA">NVIDIA</a></td>
+              <td>218.66</td>
+              <td class="up">+3.56%</td>
+              <td>最近可驗證收盤</td>
+              <td>AI 龍頭是否續強，決定台灣 AI 鏈風險偏好。</td>
+            </tr>
+            <tr>
+              <td><a href="https://finance.yahoo.com/quote/AMD">AMD</a></td>
+              <td>523.2</td>
+              <td class="up">+1.38%</td>
+              <td>最近可驗證收盤</td>
+              <td>代表第二線 AI 晶片族群資金是否還在。</td>
+            </tr>
+            <tr>
+              <td><a href="https://finance.yahoo.com/quote/DX-Y.NYB">美元指數</a></td>
+              <td>99.26</td>
+              <td class="up">+0.06%</td>
+              <td>指數連續報價</td>
+              <td>美元偏強會壓縮科技股估值與新興市場風險胃納。</td>
+            </tr>
+            <tr>
+              <td><a href="https://finance.yahoo.com/quote/CL=F">WTI 原油</a></td>
+              <td>92.87</td>
+              <td class="up">+0.77%</td>
+              <td>連續報價</td>
+              <td>油價高檔代表通膨與地緣變數尚未退場。</td>
+            </tr>
+            <tr>
+              <td><a href="https://finance.yahoo.com/quote/GC=F">黃金</a></td>
+              <td>4,488.4</td>
+              <td class="up">+0.29%</td>
+              <td>連續報價</td>
+              <td>黃金偏強意味避險需求仍在。</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="note">說明：期貨、美元、油金以 Yahoo Finance 連續報價為主；費半、VIX、ADR 與美股個股若尚未進入有效盤前成交，優先採最近可驗證收盤。</div>
       </div>
 
       <div class="card span-6">
         <h2>科技 / 半導體焦點</h2>
-        <ul>
-          <li>Reuters 與 Investing 都把今晚科技壓力指向 Broadcom：不是 AI 故事消失，而是市場對「beat and raise」的胃口太高，沒有再上修就引發高檔獲利了結。</li>
-          <li>NVIDIA 盤前仍約 `+1.84%`、台積電 ADR 約 `+1.85%`，代表真正的主線核心目前沒有跟著 Broadcom 一起鬆掉，這對台股明天的 AI 主鏈屬中性偏正面。</li>
-          <li>AMD 盤前約 `-3.56%`，說明市場今天更像在修正高 beta 晶片股，而不是全面否定算力需求。</li>
-        </ul>
-        <div class="note">翻成台股語言：明天若美股開盤後 TSM / NVDA 守住，台股更可能回到「2330 穩、先進封裝穩、熱錢集中在幾檔高彈性股」的結構。</div>
+        <div class="mini-grid">
+          <div class="mini"><b>台積電 / 先進製程</b>TSM ADR 444.92、+6.33%；若 ADR 今晚先穩，台股明天比較有機會回到『主線沒壞、只是估值再平衡』的解讀。</div><div class="mini"><b>NVIDIA / AMD</b>NVDA 218.66、AMD 523.2，兩檔都還在 AI 核心名單，但市場從齊漲改成挑估值與催化。</div><div class="mini"><b>費半 / Broadcom 餘波</b>費半現貨尚未開盤前只能先看前一交易日收盤與今晚期貨情緒，Broadcom 財報後留下的訊號是『需求仍在，但市場對高位半導體要求更嚴格』。</div>
+        </div>
       </div>
 
       <div class="card span-6">
         <h2>風險與通膨線索</h2>
         <ul>
-          <li>今晚最大總經事件是美國 `5 月非農就業`，BLS 官方排程確認在美東 `08:30`、也就是台北今晚 `20:30` 公布，落在開盤前。</li>
-          <li>市場主流預期約為：非農 `+85K`、失業率 `4.3%`、平均時薪月增 `+0.3%`。若就業與薪資都偏熱，美元與風險偏好可能先朝壓科技股的方向走。</li>
-          <li>中東局勢與油價仍是第二層風險。油價高檔不利市場快速重回「無視通膨只追 AI」的單一路徑。</li>
+          <li>今晚 20:30 台北時間是美國 5 月非農就業與失業率公布時點，若數據偏熱，美元與殖利率可能再壓科技股估值。</li><li>美元指數現報 99.26、原油 92.87、黃金 4,488.4；代表市場還沒把通膨與地緣風險完全關掉。</li><li>VIX 目前 15.71，沒有到恐慌值，但也不支持對升溫股無條件追價。</li>
         </ul>
       </div>
 
       <div class="card span-12">
         <h2>新聞交叉驗證重點</h2>
-        <div class="mini-grid">
-          <div class="mini">
-            <b>Reuters × Investing：Broadcom 是今晚科技降溫主因</b>
-            兩邊都指向相同結論：市場失望的不是 AI 需求消失，而是 Broadcom 沒有再給更高的 AI 上修。
-          </div>
-          <div class="mini">
-            <b>BLS 官方 × 市場預期：真正分水嶺在 NFP</b>
-            今晚不是只看財報新聞，開盤前 `20:30` 的就業與薪資數字，會直接影響美元、風險偏好與科技股估值容忍度。
-          </div>
-          <div class="mini">
-            <b>盤前股價結構：TSM / NVDA 穩，AMD 弱</b>
-            代表市場還在主線內做切換，不是整條 AI 鏈一起翻空；明天台股更像挑股，不像全面退潮。
-          </div>
-        </div>
+        <ul>
+          <li><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxQRjd0VDVDTE8tQ3NNbkxONGN2d2VuUlFUb2xRc19kZFRPN1E4MWduSzczMTYyNUtPZjFLMFJWMGN0WTVCdDdwbk5rOHdZc09JUEwxd3ZDRS1RSVU5V2w5dXJkSkRQdXloYjJvRUJlaEJpek56SVZYQW5BZ2hqZTZJODdLUkVNb3ZTZFI0X1hoZEt0RXdOUk9Yeg?oc=5">Dow claims record closing high, S&amp;P 500 advances; chip selloff weighs on Nasdaq</a> <span class="small">｜Reuters｜科技盤前情緒</span></li><li><a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxNS2NuS0t6c2wyY1ZvSUwxelYxTHpROW5Qc0VmbjktT2g0R2JKMTZvcUt3QjBPYW9UMDNUWTcyS01BNjQ1cllLbzdPS0dTYkE2WGllQ0ZUQXo0M3AxeWhJNmhtT3pTVlhWcEhRSTA4WGt2VHlxdVlsOEw4OTFzRVBpR3V6YlVJREZNXzJZaTFsRVgtRlpFaVJMZTVUREhUcE4zN0JV?oc=5">TSMC working hard to meet chip demand, would &#x27;like&#x27; to hike prices</a> <span class="small">｜Reuters｜台積電 AI 需求</span></li><li><a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxNdVNtNGpyMnhKcHVwQ094UElqNDBPNE5PYllQOXpGM1c3NTlsNnRrR1FPdUVYS3RzSk1LNjZVWWNKbWNjVzJjbmxQejg0Z092ZWo4dm00SHZZdmVVd2NCNTl1ckdoWC03OTBKSC0zYXRPcGhhMG5IQVJzM2t3QS1xYjlFVGF1Z3pIQktkRDltbmE1QmdqLUlFanRoSF9jdEpmcVhaS3Z0MHFvUWpIa0RjS0tZTnNqNXhP?oc=5">Whisper it, but the US jobs market may have turned a corner</a> <span class="small">｜Reuters｜今晚總經事件</span></li>
+          <li><a href="https://www.bls.gov/schedule/news_release/empsit.htm">Employment Situation 發布時程</a> <span class="small">｜BLS｜今晚 20:30 台北時間前後的總經主事件</span></li>
+        </ul>
       </div>
 
       <div class="card span-12">
         <h2>對台股隔日可能影響的 2~3 種情境</h2>
         <div class="mini-grid">
-          <div class="mini">
-            <b>情境 A｜NFP 溫和、TSM / NVDA 撐住，台股延續 AI 主線</b>
-            若就業不過熱、美元沒再往上衝，2330、3711、2308 這類核心股有機會穩中偏強，台股明天更容易走權值穩盤、主線續抱的盤。
-          </div>
-          <div class="mini">
-            <b>情境 B｜NFP 偏熱、美元偏硬，台股變高低切換盤</b>
-            若薪資與就業都偏強，明天台股較可能出現指數不一定大跌，但高位 PCB、ASIC、散熱股先被資金降風險，回到只剩核心權值撐盤。
-          </div>
-          <div class="mini">
-            <b>情境 C｜油金續強、週末風險升溫，台股轉震盪控倉</b>
-            若地緣 headline 再推高油價，明天台股較可能先開後震，價值區仍可觀察，但升溫區更適合先收回部分報酬、避免硬追。
-          </div>
+          <div class="mini"><b>情境一｜NQ 轉穩、TSM ADR 守住</b>若科技期貨跌幅收斂且 TSM ADR 不再擴大下跌，台股明天大概率回到主線內挑股，先看台積電、封裝測試與伺服器拉回買盤。</div><div class="mini"><b>情境二｜非農偏熱、美元再走強</b>若今晚就業數據偏熱，美元與殖利率同步上行，則高評價 AI 股可能先被估值壓縮，台股明天要提防電子權值開低震盪。</div><div class="mini"><b>情境三｜Broadcom 後續壓力擴散</b>若 NQ 期貨持續弱於 -1.32%、TSM ADR 續弱且 VIX 往 16.71 附近走，則台股明天可能從『個股修正』擴大到『族群一起調節』，升溫區優先減碼。</div>
         </div>
       </div>
 
       <div class="card span-6">
         <h2>個股價值區</h2>
-        <div class="quote">價值區定義：主線內、位階相對合理、拉回後值得優先觀察。</div>
-        <div class="mini-grid" style="margin-top:12px;">
-          <div class="mini">
-            <b>2330 台積電</b>
-            ADR 盤前仍偏穩，AI 主線核心地位沒有改變；若台股明天因總經數字震盪，反而更容易回到優先觀察名單。
-          </div>
-          <div class="mini">
-            <b>3711 日月光投控</b>
-            先進封裝主線還在，但籌碼沒最熱族群那麼擁擠，較符合「拉回後再看承接品質」的價值區邏輯。
-          </div>
-          <div class="mini">
-            <b>2308 台達電</b>
-            AI 電力與散熱基建長線沒壞，且相對高檔飆股更有部位承接空間，適合用主線裡的穩定位置來看。
-          </div>
+        <div class="small">定義：主線內、位階相對合理、拉回後值得優先觀察；以下價格採 2026/06/05 台股收盤。</div>
+        <div class="mini-grid" style="margin-top: 12px;">
+          <div class="mini"><span class="tag">2330｜拉回觀察</span><b>台積電</b>先進製程 / AI 核心定錨；收盤 2,365，-0.84%。</div><div class="mini"><span class="tag">2317｜拉回觀察</span><b>鴻海</b>AI 伺服器組裝 / 系統整合；收盤 284.5，-2.9%。</div><div class="mini"><span class="tag">3711｜拉回觀察</span><b>日月光投控</b>先進封裝 / 測試；收盤 577，-2.7%。</div><div class="mini"><span class="tag">2449｜拉回觀察</span><b>京元電子</b>AI 晶片測試；收盤 309.5，-3.88%。</div>
         </div>
       </div>
 
       <div class="card span-6">
         <h2>個股升溫區</h2>
-        <div class="quote">升溫區定義：短線題材強、資金集中、但追價風險較高。</div>
-        <div class="mini-grid" style="margin-top:12px;">
-          <div class="mini">
-            <b>2383 台光電</b>
-            AI 高階材料與 PCB 題材仍強，但只要美股科技股沒再擴散，這類高位標的最容易先被獲利了結。
-          </div>
-          <div class="mini">
-            <b>3037 欣興</b>
-            載板與 AI 伺服器鏈持續吸金，不過短線資金已高度集中，若明天盤勢轉震盪，追價容錯率偏低。
-          </div>
-          <div class="mini">
-            <b>3661 世芯-KY</b>
-            ASIC 想像力還在，但位階高、波動也大，屬典型升溫區；更適合短線節奏與部位控制，不適合無條件放大槓桿。
-          </div>
+        <div class="small">定義：短線題材強、資金集中、但追價風險較高；以下價格採 2026/06/05 台股收盤。</div>
+        <div class="mini-grid" style="margin-top: 12px;">
+          <div class="mini"><span class="tag">2454｜強題材但追價風險高</span><b>聯發科</b>高價 IC 設計 / 邊緣 AI；收盤 4,300，成交值約 51.1 億。</div><div class="mini"><span class="tag">2382｜強題材但追價風險高</span><b>廣達</b>AI 伺服器 / 組裝；收盤 390.5，成交值約 26.6 億。</div><div class="mini"><span class="tag">3231｜強題材但追價風險高</span><b>緯創</b>AI 伺服器 / 資金高集中；收盤 171，成交值約 12.9 億。</div>
         </div>
       </div>
 
-      <div class="card span-8">
+      <div class="card span-12">
         <h2>方舟框架操作提醒</h2>
         <ul>
-          <li>依方舟 QA 定義，價值區是「長線潛力仍好、當下位階相對合理」；升溫區則代表「短線過熱、繼續上漲要承受更高回檔風險」。今晚結構明顯更偏向價值區優先。</li>
-          <li>若明天因 NFP 或油價 headline 讓盤面震盪，優先看主線核心有沒有失守，而不是看到升溫區還在亮就硬追。</li>
-          <li>若手上已有正報酬且標的偏升溫區，照方舟 SOP 可優先調節；若沒有正報酬可調，先等，不必因盤前新聞急著加碼。</li>
-          <li>主線沒有壞時，真正重要的是資金流有沒有從最熱處回流到核心價值區，這往往比單日 headline 更能決定隔日台股勝率。</li>
+          <li>先分清楚是主線轉空，還是主線內部從追價切回挑位置；今晚比較像後者。</li><li>價值區優先看主線內被市場情緒一起錯殺、但產業地位與資金邏輯沒變的標的。</li><li>升溫區若隔夜遇到美元、非農或高位半導體壓力，應以節奏管理為主，不用為了參與而追價。</li><li>真正重要的不是新聞多熱，而是資金是否還願意回到 AI、先進製程、封裝測試這些主線核心。</li>
         </ul>
       </div>
 
-      <div class="card span-4">
+      <div class="card span-12">
         <h2>資料來源與抓取時間</h2>
         <ul>
-          <li>資料整理 / 抓取時間：`2026/06/05 17:04` 台北時間。</li>
-          <li>價格來源：Investing 指數/期貨/原物料頁面與 FAQ 快照、OpenAI finance snapshot（TSM / NVDA / AMD 盤前）。</li>
-          <li>新聞來源：Reuters、市場新聞聚合頁面中的 Reuters 轉載、Investing、市場官方排程頁。</li>
-          <li>資料性質提醒：盤前、ADR、期貨、現貨收盤與原物料報價存在時間差；VIX 與 SOX 今晚以最近可驗證現貨收盤補位。</li>
+          <li>資料整理 / 抓取時間：2026/06/05 17:10（台北時間）</li>
+          <li>價格來源：Yahoo Finance（期貨、ADR、指數、原油、黃金、美元） / TWSE 每日收盤行情（台股價值區 / 升溫區）、Yahoo Finance chart endpoint</li>
+          <li>新聞來源：Google News RSS / Reuters 標題串流 / BLS 發布時程（總經事件時點）</li>
+          <li>資料性質提醒：盤中、盤前、收盤、ADR、期貨與台股現貨存在時間差；若不同來源更新時間不同，本頁以最近可驗證資料補位並在表格內標示。</li>
         </ul>
-        <div class="note">
-          主要連結：
-          <a href="https://www.bls.gov/schedule/news_release/current_year.asp">BLS 2026 release schedule</a>、
-          <a href="https://www.investing.com/news/stock-market-news/broadcom-tumbles-as-revenue-miss-clouds-ai-boom-bets-4725886">Reuters / Broadcom</a>、
-          <a href="https://au.investing.com/news/stock-market-news/stocks-drop-as-ai-rally-pauses-usiran-peace-talks-stall-4473113">Reuters / Asia risk tone</a>、
-          <a href="https://www.investing.com/indices/us-30-futures">Dow futures</a>、
-          <a href="https://www.investing.com/indices/us-spx-500-futures">S&amp;P futures</a>、
-          <a href="https://www.investing.com/indices/nq-100-futures">Nasdaq futures</a>、
-          <a href="https://www.investing.com/currencies/us-dollar-index">DXY futures</a>、
-          <a href="https://www.investing.com/commodities/crude-oil">WTI</a>、
-          <a href="https://www.investing.com/commodities/gold">Gold</a>、
-          <a href="https://es.investing.com/indices/volatility-s-p-500">VIX</a>、
-          <a href="https://es.investing.com/indices/phlx-semiconductor">SOX</a>。
-        </div>
       </div>
     </section>
   </div>
